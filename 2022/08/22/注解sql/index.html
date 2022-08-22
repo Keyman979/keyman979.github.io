@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Keyman979</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="注解sql BrandDao接口配置 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788public interfa">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Keyman979">
+<meta property="og:url" content="http://example.com/2022/08/22/%E6%B3%A8%E8%A7%A3sql/index.html">
+<meta property="og:site_name" content="Keyman979">
+<meta property="og:description" content="注解sql BrandDao接口配置 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788public interfa">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-08-22T07:13:14.891Z">
+<meta property="article:modified_time" content="2022-08-22T07:13:14.891Z">
+<meta property="article:author" content="zhiqw">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Keyman979" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Keyman979</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-注解sql" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/08/22/%E6%B3%A8%E8%A7%A3sql/" class="article-date">
+  <time class="dt-published" datetime="2022-08-22T07:13:14.891Z" itemprop="datePublished">2022-08-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="注解sql"><a href="#注解sql" class="headerlink" title="注解sql"></a>注解sql</h1><hr>
+<p>BrandDao接口配置</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line">public interface BrandDao &#123;</span><br><span class="line"></span><br><span class="line">    /*</span><br><span class="line">    注意：映射文件的引入最好使用包批量扫描引入</span><br><span class="line">		&lt;mappers&gt;</span><br><span class="line">			&lt;!--方式二：扫描接口-批量引入--&gt;</span><br><span class="line">			&lt;package name=&quot;com.itheima.dao&quot;/&gt;</span><br><span class="line">		&lt;/mappers&gt;</span><br><span class="line">    增加：@Insert(&quot;增加SQL&quot;)</span><br><span class="line">	删除：@Delete(&quot;删除SQL&quot;)</span><br><span class="line">	修改：@Update(&quot;修改SQL&quot;)</span><br><span class="line">	查询：@Select(&quot;查询SQL&quot;)</span><br><span class="line">	增加记录 返回主键：@SelectKey(resultType=&quot;&quot;,keyProperty=&quot;&quot;,before=true|false,statement=&#123;&quot;select last_insert_id()&quot;&#125;);</span><br><span class="line"></span><br><span class="line">	实际开发中：MyBatis基本上不使用注解开发，除非一些小公司</span><br><span class="line">		原因：</span><br><span class="line">			1.简单操作使用注解，复杂操作要使用xml配置</span><br><span class="line">			2.使用注解存在硬编码问题</span><br><span class="line">			3.后面我们会学习MyBatis-plus  可以进行代码自动生成</span><br><span class="line">				会生成 javabean、dao接口、dao接口映射文件、service接口、service实现类</span><br><span class="line">	复杂关系实现注解说明：</span><br><span class="line">		@ResultMap：用于根据resultMap标签的id引用配置好的resultMap</span><br><span class="line">    */</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 查询所有品牌信息</span><br><span class="line">     * @return</span><br><span class="line">     */</span><br><span class="line">    @ResultMap(&quot;brandMap&quot;)</span><br><span class="line">    @Select(&quot;select * from tb_brand&quot;)</span><br><span class="line">    List&lt;Brand&gt; selectAll();</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 查看品牌详情</span><br><span class="line">     * @param id 品牌id</span><br><span class="line">     * @return 品牌对象</span><br><span class="line">     */</span><br><span class="line">    @ResultMap(&quot;brandMap&quot;)</span><br><span class="line">    @Select(&quot;select * from tb_brand where id=#&#123;id&#125;&quot;)</span><br><span class="line">    Brand selectById(int id);</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 添加品牌</span><br><span class="line">     * @param brand 封装要添加的品牌信息</span><br><span class="line">     * @return 受影响的行数</span><br><span class="line">     */</span><br><span class="line">    @Insert(&quot;insert into tb_brand values(null,#&#123;brandName&#125;,#&#123;companyName&#125;,#&#123;ordered&#125;,#&#123;description&#125;,#&#123;status&#125;)\n&quot;)</span><br><span class="line">    int add(Brand brand);</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 添加品牌 获取添加记录的主键</span><br><span class="line">     * @param brand 封装要添加的品牌信息</span><br><span class="line">     * @return 受影响的行数</span><br><span class="line">     */</span><br><span class="line">    /*</span><br><span class="line">         @SelectKey：获取插入数据的主键</span><br><span class="line">            keyProperty：主键列对应的属性</span><br><span class="line">            resultType：主键列对应的属性类型</span><br><span class="line">            before：主键的生成在插入语句之前设置为ture，在插入语句之后生成主键设置为false</span><br><span class="line">            statement：获取主键的sql语句</span><br><span class="line">    */</span><br><span class="line">    @SelectKey(keyProperty = &quot;id&quot;,resultType = int.class,before = false,statement = &quot;select last_insert_id()&quot;)</span><br><span class="line">    @Insert(&quot;insert into tb_brand values(null,#&#123;brandName&#125;,#&#123;companyName&#125;,#&#123;ordered&#125;,#&#123;description&#125;,#&#123;status&#125;)\n&quot;)</span><br><span class="line">    int addGetId(Brand brand);</span><br><span class="line">    </span><br><span class="line">    /**</span><br><span class="line">     * 修改品牌的全部信息</span><br><span class="line">     * @param brand 要修改的品牌信息</span><br><span class="line">     * @return 受影响的行数</span><br><span class="line">     */</span><br><span class="line">    @Update(&quot;update tb_brand set\n&quot; +</span><br><span class="line">            &quot;            brand_name=#&#123;brandName&#125;,\n&quot; +</span><br><span class="line">            &quot;            company_name=#&#123;companyName&#125;,\n&quot; +</span><br><span class="line">            &quot;            ordered=#&#123;ordered&#125;,\n&quot; +</span><br><span class="line">            &quot;            description=#&#123;description&#125;,\n&quot; +</span><br><span class="line">            &quot;            status=#&#123;status&#125;\n&quot; +</span><br><span class="line">            &quot;            where id=#&#123;id&#125;&quot;)</span><br><span class="line">    int update(Brand brand);</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 根据id删除指定的品牌信息记录</span><br><span class="line">     * @param id 品牌的id</span><br><span class="line">     * @return 受影响的行数</span><br><span class="line">     */</span><br><span class="line">    @Delete(&quot;delete from tb_brand where id=#&#123;id&#125;&quot;)</span><br><span class="line">    int deleteById(int id);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/08/22/%E6%B3%A8%E8%A7%A3sql/" data-id="cl74fey6f0004c95qcjgzh4b6" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2022/08/22/%E6%99%AE%E9%80%9Asql/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/08/22/%E6%B3%A8%E8%A7%A3sql/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/08/22/%E6%99%AE%E9%80%9Asql/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/08/22/%E5%8A%A8%E6%80%81sql/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/08/22/MyBatis%E7%AC%94%E8%AE%B0/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/08/20/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 zhiqw<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

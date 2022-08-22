@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Keyman979</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="普通sql BrandDao 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091public inter">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Keyman979">
+<meta property="og:url" content="http://example.com/2022/08/22/%E6%99%AE%E9%80%9Asql/index.html">
+<meta property="og:site_name" content="Keyman979">
+<meta property="og:description" content="普通sql BrandDao 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091public inter">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-08-22T07:09:23.047Z">
+<meta property="article:modified_time" content="2022-08-22T07:10:13.302Z">
+<meta property="article:author" content="zhiqw">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Keyman979" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Keyman979</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-普通sql" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/08/22/%E6%99%AE%E9%80%9Asql/" class="article-date">
+  <time class="dt-published" datetime="2022-08-22T07:09:23.047Z" itemprop="datePublished">2022-08-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="普通sql"><a href="#普通sql" class="headerlink" title="普通sql"></a>普通sql</h1><hr>
+<p>BrandDao</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br></pre></td><td class="code"><pre><span class="line">public interface BrandDao &#123;</span><br><span class="line">    /**</span><br><span class="line">     * 查询所有品牌信息</span><br><span class="line">     * @return</span><br><span class="line">     */</span><br><span class="line">    List&lt;Brand&gt; SelectAll();</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 查看品牌详情</span><br><span class="line">     * @param id 品牌id</span><br><span class="line">     * @return 品牌对象</span><br><span class="line">     */</span><br><span class="line">    Brand selectById(int id);</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 添加品牌</span><br><span class="line">     * @param brand 封装要添加的品牌信息</span><br><span class="line">     * @return 受影响的行数</span><br><span class="line">     */</span><br><span class="line">    int add(Brand brand);</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 添加品牌数据到数据库 添加完成之后获取到品牌的id</span><br><span class="line">     * @param brand 封装要添加的品牌信息</span><br><span class="line">     * @return 受影响的行数</span><br><span class="line">     */</span><br><span class="line">    int addGetId(Brand brand);</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 添加品牌数据到数据库 添加完成之后获取到品牌的id</span><br><span class="line">     * @param brand 封装要添加的品牌信息</span><br><span class="line">     * @return 受影响的行数</span><br><span class="line">     */</span><br><span class="line">    int addGetId2(Brand brand);</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 修改品牌的全部信息</span><br><span class="line">     * @param brand 要修改的品牌信息</span><br><span class="line">     * @return 受影响的行数</span><br><span class="line">     */</span><br><span class="line">    int update(Brand brand);</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 根据id删除指定的品牌信息记录</span><br><span class="line">     * @param id 品牌的id</span><br><span class="line">     * @return 受影响的行数</span><br><span class="line">     */</span><br><span class="line">    int deleteById(int id);</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 根据品牌名称模糊查询品牌列表</span><br><span class="line">     * @param brandName 品牌名称</span><br><span class="line">     * @return 品牌信息列表集合</span><br><span class="line">     */</span><br><span class="line">    List&lt;Brand&gt; selectByConditional1(String brandName);</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 根据品牌名称模糊查询品牌列表</span><br><span class="line">     * @param brandName 品牌名称</span><br><span class="line">     * @return 品牌信息列表集合</span><br><span class="line">     */</span><br><span class="line">    List&lt;Brand&gt; selectByConditional2(String brandName);</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 多条件查询</span><br><span class="line">     * @param status 当前状态</span><br><span class="line">     * @param brandName 品牌名称</span><br><span class="line">     * @param companyName 企业名称</span><br><span class="line">     * @return</span><br><span class="line">     */</span><br><span class="line">    List&lt;Brand&gt; selectByCondition3(@Param(&quot;status&quot;) int status, @Param(&quot;brandName&quot;) String brandName, @Param(&quot;companyName&quot;) String companyName);</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 多条件查询</span><br><span class="line">     * @param brand 封装查询条件</span><br><span class="line">     * @return</span><br><span class="line">     */</span><br><span class="line">    List&lt;Brand&gt; selectByCondition4(Brand brand);</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 多条件查询</span><br><span class="line">     * @param map 封装查询条件</span><br><span class="line">     * @return</span><br><span class="line">     */</span><br><span class="line">    List&lt;Brand&gt; selectByCondition5(Map&lt;String,Object&gt; map);</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 需求：要求根据品牌的状态status查询所有的品牌信息 根据ordered字段进行排序</span><br><span class="line">     */</span><br><span class="line">    List&lt;Brand&gt; selectByCondition6(QueryVo queryVo);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>BrandDao.xml配置</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br></pre></td><td class="code"><pre><span class="line">&lt;mapper namespace=&quot;com.itz.dao.BrandDao&quot;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- 1.查询所有品牌信息   --&gt;</span><br><span class="line">    &lt;!--</span><br><span class="line">        存在问题：品牌信息查询出来封装到Brand对象中显示时，品牌名称brandName和企业名称companyName两个属性数据显示为null</span><br><span class="line">        原因：</span><br><span class="line">            MyBatis可以自动的将数据库表中字段数据封装到对象属性中，但是这个时候要求表中字段和对象属性名称要一致</span><br><span class="line">            这里：tb_brand表中品牌名称字段为brand_name、企业名称字段为company_name 和Brand类品牌名称属性brandName、企业名称companyName对不上</span><br><span class="line">            就导致了无法将数据库中查询出的品牌名称数据和企业名称数据填充到Brand对象的品牌名称属性brandName、企业名称属性companyName上面 所以出现为null</span><br><span class="line">        解决：</span><br><span class="line">            方式一：</span><br><span class="line">            1.手动配置表中字段和类中属性的映射，使用ResultMap标签</span><br><span class="line">                resultMap标签：用于手动配置表中和类中属性映射。解决由于字段名和属性名不一致导致无法自动填充的问题。</span><br><span class="line">              使用：</span><br><span class="line">                  1.编写一个resultMap标签</span><br><span class="line">                  2.在resultMap标签中使用子标签id或result进行配置列名和属性的映射</span><br><span class="line">                  3.在select标签中根据resultMap标签id引用我们自定义的resultMap标签</span><br><span class="line">              resultMap标签：</span><br><span class="line">                id属性：唯一标识 名称可以随便起</span><br><span class="line">                type属性：你这里要配置的是数据库哪张表和哪个Java类的字段属性映射 这里写java类的类型</span><br><span class="line">                id子标签：用于配置主键列名和属性名的映射</span><br><span class="line">                    column属性：数据库表中列名</span><br><span class="line">                    property属性：java类属性名</span><br><span class="line">                result标签：用于配置普通列名和属性名的映射</span><br><span class="line">                    column属性：数据库表中列名</span><br><span class="line">                    property属性：java类属性名</span><br><span class="line">         注意：在select标签中 resultType和resultMap的使用只能二选一，不要同时存在</span><br><span class="line"></span><br><span class="line">       方式二：使用别名 直接对你的查询字段[列]起一个别名和属性名称相同即可</span><br><span class="line"></span><br><span class="line">       方式二对于后期的复杂的多表查询 用起来不是很合适</span><br><span class="line">       实际开发中，使用方式一会更多些  当然对于你想使用哪一种随你</span><br><span class="line">    --&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- 方式二： --&gt;</span><br><span class="line">    &lt;!--&lt;select id=&quot;SelectAll&quot; resultType=&quot;Brand&quot;&gt;</span><br><span class="line">        select id,brand_name AS brandName,company_name AS companyName,ordered,description,status from tb_brand</span><br><span class="line">    &lt;/select&gt;--&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- 方式一：使用resultMap 解决列名和java类属性不一致 数据无法自动填充问题--&gt;</span><br><span class="line">    &lt;resultMap id=&quot;brandMap&quot; type=&quot;Brand&quot;&gt;</span><br><span class="line">        &lt;result column=&quot;brand_name&quot; property=&quot;brandName&quot; /&gt;</span><br><span class="line">        &lt;result column=&quot;company_name&quot; property=&quot;companyName&quot; /&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/resultMap&gt;</span><br><span class="line"></span><br><span class="line">    &lt;select id=&quot;SelectAll&quot; resultMap=&quot;brandMap&quot;&gt;</span><br><span class="line">        select * from tb_brand</span><br><span class="line">    &lt;/select&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!--查看详情信息--&gt;</span><br><span class="line">    &lt;!--</span><br><span class="line">        select标签：查询</span><br><span class="line">            id属性：接口方法名称</span><br><span class="line">            resultType：接口方法返回值类型</span><br><span class="line">                情况1：方法返回泛型集合 就写集合的泛型类型</span><br><span class="line">                情况2：方法返回对象    就直接写对象的类型</span><br><span class="line"></span><br><span class="line">                注意：如果是查询，则resultType属性不能省略，当然你写了resultMap属性之后，可以不用写resultType属性</span><br><span class="line">            parameterType：接口方法形参类型</span><br><span class="line">                情况1：如果传入的是简单类型（基本类型+String）类型   parameterType属性值就直接写int、long、String</span><br><span class="line">                        获取参数值：#&#123;任意字段名称&#125;     一般我们会写和方法形参名称保持一致</span><br><span class="line"></span><br><span class="line">                注意：参数类型parameterType属性可以省略，不进行设置【MyBatis会自动识别参数类型 进行参数绑定】，一般如果我们明确知道类型，也不进行省略</span><br><span class="line">    --&gt;</span><br><span class="line">    &lt;select id=&quot;selectById&quot; resultMap=&quot;brandMap&quot; parameterType=&quot;int&quot;&gt;</span><br><span class="line">        select * from tb_brand where id = #&#123;id&#125;</span><br><span class="line">    &lt;/select&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!--添加品牌--&gt;</span><br><span class="line">    &lt;!--</span><br><span class="line">        insert标签：添加</span><br><span class="line">            id属性：接口方法名</span><br><span class="line">            resultType属性：在增删改中 返回的是受影响行数 int类型  不需要设置 resultType属性省略不设置</span><br><span class="line">            parameterType属性：接口方法参数类型</span><br><span class="line">                情况2：如果传入的是一个对象参数    则直接写对象的类型即可</span><br><span class="line">                    获取参数：#&#123;对象属性名称&#125;</span><br><span class="line"></span><br><span class="line">            注意：</span><br><span class="line">                1.增删改操作：对应的insert、update、delete标签不需要设置resultType属性  默认返回受影响的行数 int类型</span><br><span class="line">                2.增删改操作：MyBatis采用JDBC事务管理   默认关闭了事务的自动提交 需要手动提交事务</span><br><span class="line">                3.增删改操作：不要使用错标签 增加用insert标签 删除就用delete标签 修改就用update标签</span><br><span class="line">    --&gt;</span><br><span class="line">    &lt;insert id=&quot;add&quot;&gt;</span><br><span class="line">        insert into tb_brand values(null, #&#123;brandName&#125;, #&#123;companyName&#125;, #&#123;ordered&#125;, #&#123;description&#125;, #&#123;status&#125;)</span><br><span class="line">    &lt;/insert&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!--添加品牌数据到数据库 添加完成之后获取到品牌的id--&gt;</span><br><span class="line">    &lt;!--</span><br><span class="line">        主键返回方式一：</span><br><span class="line">            在insert标签上设置 useGeneratedKeys属性和keyProperty属性</span><br><span class="line">            useGeneratedKeys属性：使用MySQL数据库主键自增</span><br><span class="line">            keyProperty属性：通过数据库主键自增生成的id    填充到对应的那个属性上</span><br><span class="line">            注意：只有数据库采用的是主键自增 才可以这样使用</span><br><span class="line">    --&gt;</span><br><span class="line">    &lt;insert id=&quot;addGetId&quot; parameterType=&quot;brand&quot; useGeneratedKeys=&quot;true&quot; keyProperty=&quot;id&quot;&gt;</span><br><span class="line">        insert into tb_brand values(null, #&#123;brandName&#125;, #&#123;companyName&#125;, #&#123;ordered&#125;, #&#123;description&#125;, #&#123;status&#125;)</span><br><span class="line">    &lt;/insert&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!--</span><br><span class="line">        添加-主键返回方式二：</span><br><span class="line">            selectKey标签： 查询添加到数据库中的记录的主键数据</span><br><span class="line">                keyProperty属性：主键列查询出来填充到对象的哪个属性上    主键列对应的属性名称</span><br><span class="line">                resultType属性：主键列对应的属性类型</span><br><span class="line">                order属性：主键的生成和插入SQL语句的顺序</span><br><span class="line">                    eg：情况1：id自增 先插入数据 然后生成主键  所以这样就设置为AFTER</span><br><span class="line">                        情况2：比如使用uuid作为主键  这时uuid就需要提前生成 然后再和数据一起插入到数据库表中  这样就设置为BEFORE</span><br><span class="line">            selectKey标签体：写查询主键的SQL语句</span><br><span class="line">                  自增：select last_insert_id()    ：查询上一次插入记录自增的id</span><br><span class="line">                  uuid：select uuid()             ：查询当前插入这条记录的UUID</span><br><span class="line"></span><br><span class="line">       实际开发：</span><br><span class="line">              一流项目：使用雪花算法</span><br><span class="line">              二流项目：使用uuid</span><br><span class="line">              三流项目：使用主键自增</span><br><span class="line">    --&gt;</span><br><span class="line">    &lt;insert id=&quot;addGetId2&quot; parameterType=&quot;brand&quot;&gt;</span><br><span class="line">        &lt;selectKey keyProperty=&quot;id&quot; resultType=&quot;int&quot; order=&quot;AFTER&quot;&gt;</span><br><span class="line">            select last_insert_id()</span><br><span class="line">        &lt;/selectKey&gt;</span><br><span class="line">        insert into tb_brand values(null, #&#123;brandName&#125;, #&#123;companyName&#125;, #&#123;ordered&#125;, #&#123;description&#125;, #&#123;status&#125;)</span><br><span class="line">    &lt;/insert&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!--修改品牌记录的所有字段--&gt;</span><br><span class="line">    &lt;update id=&quot;update&quot; parameterType=&quot;brand&quot;&gt;</span><br><span class="line">        update tb_brand set</span><br><span class="line">            brand_name=#&#123;brandName&#125;,</span><br><span class="line">            company_name=#&#123;companyName&#125;,</span><br><span class="line">            ordered=#&#123;ordered&#125;,</span><br><span class="line">            description=#&#123;description&#125;,</span><br><span class="line">            status=#&#123;status&#125;</span><br><span class="line">            where id=#&#123;id&#125;</span><br><span class="line">    &lt;/update&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!--根据id删除单个品牌信息记录--&gt;</span><br><span class="line">    &lt;delete id=&quot;deleteById&quot; parameterType=&quot;int&quot;&gt;</span><br><span class="line">        delete from tb_brand where id=#&#123;id&#125;</span><br><span class="line">    &lt;/delete&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!--根据品牌名称模糊查询品牌列表--&gt;</span><br><span class="line">    &lt;select id=&quot;selectByConditional1&quot; resultMap=&quot;brandMap&quot; parameterType=&quot;string&quot;&gt;</span><br><span class="line">        &lt;!--select * from tb_brand where brand_name like &#x27;%#&#123;brandName&#125;%&#x27;--&gt;</span><br><span class="line">        select * from tb_brand where brand_name like &#x27;%$&#123;value&#125;%&#x27;</span><br><span class="line">    &lt;/select&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!--根据品牌名称模糊查询品牌列表--&gt;</span><br><span class="line">    &lt;!--</span><br><span class="line">        MyBatis中获取参数的方式有两种：</span><br><span class="line">            $&#123;&#125;:表示拼接字符串 不会进行数据类型转换  容易产生SQL注意问题</span><br><span class="line">            #&#123;&#125;:表示占位符？  会进行数据类型自动转换 不会产生SQL注入问题</span><br><span class="line">            注意：</span><br><span class="line">                使用$&#123;&#125;获取单个简单类型参数：必须写$&#123;value&#125;     获取对象类型参数：$&#123;对象属性名称&#125;</span><br><span class="line">                使用#&#123;&#125;获取单个简单类型参数：必须写#&#123;任意字段&#125;   获取对象类型参数：#&#123;对象属性名称&#125;</span><br><span class="line">            使用场景：</span><br><span class="line">                #&#123;&#125;: 一般正常的传递参数 都使用#&#123;&#125;</span><br><span class="line">                $&#123;&#125;: 一般传递表名、列名、排序字段使用$&#123;&#125;</span><br><span class="line">                    因为传递表名tb_brand 使用$&#123;&#125;传递SQL语句中就直接显示 tb_brand；如果使用#&#123;&#125;传递 则会这样显示&#x27;tb_brand&#x27;</span><br><span class="line">    --&gt;</span><br><span class="line">    &lt;select id=&quot;selectByConditional2&quot; resultMap=&quot;brandMap&quot; parameterType=&quot;string&quot;&gt;</span><br><span class="line">        &lt;!--select * from tb_brand where brand_name like &#x27;%#&#123;brandName&#125;%&#x27;--&gt;</span><br><span class="line">        &lt;!--concat(&#x27;%&#x27;,#&#123;brandName&#125;,&#x27;%&#x27;):MySQl内置的字符串拼接函数  用于将多个字符串拼接成一个新的字符串  ==》&#x27;%?%&#x27; ==&gt; &#x27;%百度%&#x27; --&gt;</span><br><span class="line">        select * from tb_brand where brand_name like concat(&#x27;%&#x27;,#&#123;brandName&#125;,&#x27;%&#x27;)</span><br><span class="line">    &lt;/select&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!--多条件查询品牌信息列表--&gt;</span><br><span class="line">    &lt;!--</span><br><span class="line">        问题：多个参数不能直接传递，如果直接传递会报错</span><br><span class="line">        解决：</span><br><span class="line">            方式一：直接在dao接口方法形参前打上@Param(&quot;参数名称&quot;)注解  获取时#&#123;参数名称&#125;  #&#123;&#125;中的参数名称要和@Param注解中参数名称保持一致  【最简单】</span><br><span class="line"></span><br><span class="line">            方式二：将多个参数封装到对象中 获取：#&#123;对象属性名称&#125;</span><br><span class="line"></span><br><span class="line">            方式三：将多个参数封装到一个map集合中    获取：#&#123;map的key&#125;</span><br><span class="line"></span><br><span class="line">    --&gt;</span><br><span class="line">    &lt;!--多参数传递方式一：使用@Param注解--&gt;</span><br><span class="line">    &lt;select id=&quot;selectByCondition3&quot; resultMap=&quot;brandMap&quot;&gt;</span><br><span class="line">        select * from tb_brand</span><br><span class="line">            where status = #&#123;status&#125;</span><br><span class="line">            and brand_name like concat(&#x27;%&#x27;, #&#123;brandName&#125;, &#x27;%&#x27;)</span><br><span class="line">            and company_name like concat(&#x27;%&#x27;, #&#123;companyName&#125;, &#x27;%&#x27;)</span><br><span class="line">    &lt;/select&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!--多参数传递方式二：使用对象封装多个参数--&gt;</span><br><span class="line">    &lt;select id=&quot;selectByCondition4&quot; resultMap=&quot;brandMap&quot; parameterType=&quot;brand&quot;&gt;</span><br><span class="line">        select * from tb_brand</span><br><span class="line">          where status = #&#123;status&#125;</span><br><span class="line">          and brand_name like concat(&#x27;%&#x27;, #&#123;brandName&#125;, &#x27;%&#x27;)</span><br><span class="line">          and company_name like concat(&#x27;%&#x27;, #&#123;companyName&#125;, &#x27;%&#x27;)</span><br><span class="line">    &lt;/select&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!--多参数传递方式二：使用map集合封装多个参数--&gt;</span><br><span class="line">    &lt;select id=&quot;selectByCondition5&quot; resultMap=&quot;brandMap&quot;&gt;</span><br><span class="line">        select * from tb_brand</span><br><span class="line">          where status = #&#123;status&#125;</span><br><span class="line">          and brand_name like concat(&#x27;%&#x27;, #&#123;brandName&#125;, &#x27;%&#x27;)</span><br><span class="line">          and company_name like concat(&#x27;%&#x27;, #&#123;companyName&#125;, &#x27;%&#x27;)</span><br><span class="line">    &lt;/select&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!--使用包装类QueryVo封装所有的参数--&gt;</span><br><span class="line">    &lt;select id=&quot;selectByCondition6&quot; resultMap=&quot;brandMap&quot; parameterType=&quot;queryVo&quot;&gt;</span><br><span class="line">        select *</span><br><span class="line">        from tb_brand</span><br><span class="line">        where status = #&#123;brand.status&#125;</span><br><span class="line">        order by $&#123;orderField&#125; desc</span><br><span class="line">    &lt;/select&gt;</span><br><span class="line">&lt;/mapper&gt;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/08/22/%E6%99%AE%E9%80%9Asql/" data-id="cl74fey6g0005c95q6vp293tg" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/08/22/%E6%B3%A8%E8%A7%A3sql/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/08/22/%E5%8A%A8%E6%80%81sql/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/08/22/%E6%B3%A8%E8%A7%A3sql/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/08/22/%E6%99%AE%E9%80%9Asql/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/08/22/%E5%8A%A8%E6%80%81sql/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/08/22/MyBatis%E7%AC%94%E8%AE%B0/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/08/20/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 zhiqw<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
